@@ -1,12 +1,17 @@
 import React from "react";
-import { Outlet } from "react-router";
+import { Outlet, useLocation } from "react-router";
 import Navbar from "../Navbar/Navbar";
 
 const Root = () => {
+  const location = useLocation();
+  const HiddensNavandFoot =
+    location.pathname.includes("register") ||
+    location.pathname.includes("login");
+  console.log(Location);
   return (
     <div>
-      <Navbar></Navbar>
-      <div className="mt-24">
+      {HiddensNavandFoot || <Navbar></Navbar>}
+      <div className="">
         <Outlet />
       </div>
     </div>

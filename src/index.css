@@ -80,3 +80,32 @@
 .button:active {
   scale: 1;
 }
+
+.btns {
+  background-image: linear-gradient(
+    to right,
+    #aa076b 0%,
+    #61045f 51%,
+    #aa076b 100%
+  );
+}
+.btns {
+  padding: 5px 15px !important;
+  text-align: center !important;
+  margin-top: 10 !important;
+  transition: 0.5s !important;
+  background-size: 200% auto !important;
+  color: white !important;
+  box-shadow: 0 0 20px #eee !important;
+  border-radius: 10px !important;
+  display: block !important;
+}
+
+.btns:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+#matrixCanvas {
+}

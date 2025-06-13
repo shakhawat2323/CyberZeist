@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "নিজের আইডি ফুল সিকিউরিটি করা",
+    "description": "আপনার ফেসবুক আইডির নিরাপত্তা নিশ্চিত করতে দুই ধাপের যাচাইকরণ (2FA), শক্তিশালী পাসওয়ার্ড, এবং ট্রাস্টেড ডিভাইস সেটআপ করুন।",
+    "image": "https://i.ibb.co/XkNxsyrM/Facebook-secoryty.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Facebook Verification",
+    "description": "ফেসবুক আইডি ভেরিফিকেশনের জন্য জাতীয় পরিচয়পত্র (NID) অথবা পাসপোর্ট আপলোড করুন এবং নিজের নাম ও জন্মতারিখ ফেসবুক প্রোফাইলের সাথে মেলানো নিশ্চিত করুন।",
+    "image": "https://i.ibb.co/MyDCgz98/Facebook-Verification.png"
+  },
+  {
+    "id": 3,
+    "title": "হ্যাক হয়ে যাওয়া ফেসবুক আইডি রিকভারি করা",
+    "description": "হ্যাক হওয়া আইডি পুনরুদ্ধারের জন্য ফেসবুকের Help Center থেকে 'Hacked' অপশন সিলেক্ট করে স্টেপ-বাই-স্টেপ রিকভারি প্রসেস অনুসরণ করুন।",
+    "image": "https://i.ibb.co/s9ZNCfXg/image.jpg"
+  },
+  {
+    "id": 4,
+    "title": "ডিজেবল আইডি রিকভারি করা",
+    "description": "ফেসবুক আইডি যদি ডিজেবল হয়ে যায়, তাহলে appeal form পূরণ করে আপনার পরিচয় সংক্রান্ত ডকুমেন্ট আপলোড করে আবেদন করুন।",
+    "image": "https://i.ibb.co/s9ZNCfXg/image.jpghttps://i.ibb.co/jv31tj52/7d81840f-a799-478b-8660-8f27650fa9a5.png"
+  },
+  {
+    "id": 5,
+    "title": "Get Started আইডি রিকভারি করা",
+    "description": "Get Started দেখালে Facebook অ্যাকাউন্টে প্রমাণিত পরিচয় দিতে হবে এবং সঠিক ডিভাইস থেকে লগইন করতে হবে। Facebook এর দেওয়া নির্দেশিকা অনুসরণ করুন।",
+    "image": "https://i.ibb.co/wrCFq9Nb/c784d8ec-909a-4a2e-b203-68b12c8e1007.png"
+  },
+  {
+    "id": 6,
+    "title": "Get Started আইডি রিকভারি করা",
+    "description": "Get Started দেখালে Facebook অ্যাকাউন্টে প্রমাণিত পরিচয় দিতে হবে এবং সঠিক ডিভাইস থেকে লগইন করতে হবে। Facebook এর দেওয়া নির্দেশিকা অনুসরণ করুন।",
+    "image": "https://i.ibb.co/wrCFq9Nb/c784d8ec-909a-4a2e-b203-68b12c8e1007.png"
+  }
+]

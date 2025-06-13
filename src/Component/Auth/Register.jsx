@@ -1,9 +1,13 @@
 import React from "react";
-
+import { ReactMatrixAnimation } from "react-matrix-animation";
+import { Link } from "react-router";
 const Register = () => {
   return (
     <div>
-      <div className="hero bg-base-200 min-h-screen">
+      <div className="hero bg-base-200 min-h-screen ">
+        <div className="w-full h-full">
+          <ReactMatrixAnimation />
+        </div>
         <div className="hero-content  ">
           <div className="">
             <form className="flex flex-col gap-3 max-w-[500px] p-5 rounded-2xl relative bg-[#1a1a1a] text-white border border-[#333]">
@@ -86,12 +90,12 @@ const Register = () => {
 
               <p className="text-sm text-white/70 text-center">
                 Already have an account?{" "}
-                <a
-                  href="#"
+                <Link
+                  to="/login"
                   className="text-[#00bfff] text hover:underline hover:decoration-royalblue"
                 >
-                  Signin
-                </a>
+                  Sign In
+                </Link>
               </p>
             </form>
           </div>
