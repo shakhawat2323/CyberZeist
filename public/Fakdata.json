@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "title": "CamScanner Premium",
+    "description": "Unlock advanced scanning features, no watermark, cloud storage and OCR.",
+    "price": "$4.99/month",
+    "image": "/images/camscanner.png"
+  },
+  {
+    "id": 2,
+    "title": "Candy Crush Premium",
+    "description": "Unlimited lives, boosters and ad-free gaming experience.",
+    "price": "$3.49/month",
+    "image": "/images/candycrush.png"
+  },
+  {
+    "id": 3,
+    "title": "Canva Pro",
+    "description": "Premium templates, brand kit, background remover and unlimited content.",
+    "price": "$9.99/month",
+    "image": "/images/canva.png"
+  },
+  {
+    "id": 4,
+    "title": "FilmoraGo Premium",
+    "description": "Access all effects, remove watermark, export in HD quality.",
+    "price": "$5.99/month",
+    "image": "/images/filmorago.png"
+  },
+  {
+    "id": 5,
+    "title": "IMO Premium",
+    "description": "Ad-free chat, HD video calls and premium stickers.",
+    "price": "$2.99/month",
+    "image": "/images/imo.png"
+  },
+  {
+    "id": 6,
+    "title": "InShot Premium",
+    "description": "All filters, effects, and ad-free export with no watermark.",
+    "price": "$3.99/month",
+    "image": "/images/inshot.png"
+  },
+  {
+    "id": 7,
+    "title": "Kinemaster Premium",
+    "description": "Full access to video editing tools, no watermark, premium assets.",
+    "price": "$6.49/month",
+    "image": "/images/kinemaster.png"
+  },
+  {
+    "id": 8,
+    "title": "Lightroom Premium",
+    "description": "Unlock advanced photo editing tools, cloud storage and presets.",
+    "price": "$9.99/month",
+    "image": "/images/lightroom.png"
+  },
+  {
+    "id": 9,
+    "title": "MX Player Premium",
+    "description": "Ad-free movie streaming and offline downloads.",
+    "price": "$2.99/month",
+    "image": "/images/mxplayer.png"
+  },
+  {
+    "id": 10,
+    "title": "PicsArt Premium",
+    "description": "Access exclusive filters, tools and ad-free editing.",
+    "price": "$7.99/month",
+    "image": "/images/picsart.png"
+  },
+  {
+    "id": 11,
+    "title": "Spotify Premium",
+    "description": "Ad-free music, offline mode and better audio quality.",
+    "price": "$4.99/month",
+    "image": "/images/spotify.png"
+  },
+  {
+    "id": 12,
+    "title": "Telegram Premium",
+    "description": "Faster downloads, larger file sizes, and exclusive features.",
+    "price": "$5.99/month",
+    "image": "/images/telegram.png"
+  },
+  {
+    "id": 13,
+    "title": "Truecaller Premium",
+    "description": "Ad-free caller ID, incognito mode, and contact requests.",
+    "price": "$2.49/month",
+    "image": "/images/truecaller.png"
+  },
+  {
+    "id": 14,
+    "title": "YouTube Premium",
+    "description": "Ad-free videos, background play, and YouTube Music.",
+    "price": "$11.99/month",
+    "image": "/images/youtube.png"
+  }
+]

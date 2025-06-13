@@ -1,0 +1,44 @@
+[
+  {
+    "id": 15,
+    "title": "Cyber Security Basics",
+    "description": "Learn fundamentals of online safety, encryption, and protection.",
+    "price": "$14.99 (one-time)",
+    "image": "/images/cyber_basics.png"
+  },
+  {
+    "id": 16,
+    "title": "Ethical Hacking Advanced",
+    "description": "Explore advanced penetration testing and real-world hacking tools.",
+    "price": "$49.99 (lifetime)",
+    "image": "/images/ethical_hacking.png"
+  },
+  {
+    "id": 17,
+    "title": "Complete Bug Bounty Course",
+    "description": "Step-by-step guide to find vulnerabilities and earn rewards.",
+    "price": "$39.99 (lifetime)",
+    "image": "/images/bug_bounty.png"
+  },
+  {
+    "id": 18,
+    "title": "Network Security Masterclass",
+    "description": "Master firewalls, VPNs, and threat mitigation techniques.",
+    "price": "$29.99 (one-time)",
+    "image": "/images/network_security.png"
+  },
+  {
+    "id": 19,
+    "title": "Cybersecurity for Beginners",
+    "description": "Easy-to-understand course to protect yourself from online threats.",
+    "price": "$9.99",
+    "image": "/images/cyber_beginner.png"
+  },
+  {
+    "id": 20,
+    "title": "Cybersecurity",
+    "description": "Easy-to-understand course to protect yourself from online threats.",
+    "price": "$9.99",
+    "image": "/images/cyber_beginner.png"
+  }
+]

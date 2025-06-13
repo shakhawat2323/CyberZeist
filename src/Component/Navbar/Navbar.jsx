@@ -20,6 +20,9 @@ const Navbar = () => {
       <li className="text">
         <Link>Courses</Link>
       </li>
+      <li className="text">
+        <Link>Shop</Link>
+      </li>
     </>
   );
   return (
