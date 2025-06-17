@@ -79,7 +79,7 @@ const Footer = () => {
           </h3>
           <p className="mb-2">Address: 27 Division St, Berakuti, NY</p>
           <p className="mb-2">Phone: +8 1440 456 782</p>
-          <p className="mb-2">Email: example@mail.com</p>
+          <p className="mb-2">Email: CyberZeist@mail.com</p>
           <p>Website: yourwebsite.com</p>
         </div>
 
@@ -112,7 +112,9 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="border-t border-gray-600 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
-        <p className="text-center">Copyright ©Eduor all rights reserved.</p>
+        <p className="text-center">
+          Copyright ©CyberZeist all rights reserved.
+        </p>
         <div className="flex gap-4 mt-4 md:mt-0">
           <p className="hover:text-cyan-400 cursor-pointer">Privacy Policy</p>
           <p className="hover:text-cyan-400 cursor-pointer">About</p>
