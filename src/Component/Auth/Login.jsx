@@ -1,12 +1,41 @@
 import React, { useState } from "react";
 import { ReactMatrixAnimation } from "react-matrix-animation";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Eye, EyeOff } from "lucide-react"; // 👈 Eye icons
+import UseAuth from "../useHoks/UseAuth";
+import Swal from "sweetalert2";
 
 const Login = () => {
+  const { Loginuser } = UseAuth();
+  const naviget = useNavigate();
+  const location = useLocation();
+  console.log(location);
   const [showPassword, setShowPassword] = useState(false);
 
   const togglePassword = () => setShowPassword(!showPassword);
+
+  //start
+  const from = location?.state?.from?.pathname || "/";
+  const loginguser = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    const user = { email, password };
+    console.log(user);
+    Loginuser(email, password).then((result) => {
+      console.log(result.user);
+      Swal.fire({
+        position: "top-center",
+        icon: "success",
+        title: "Sign in auccessfully",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+      naviget(from, { replace: true });
+    });
+  };
+  //end
 
   return (
     <div className="relative min-h-screen bg-base-200 overflow-hidden">
@@ -20,17 +49,17 @@ const Login = () => {
         <div className="w-full max-w-md bg-[#0a1939] rounded-xl shadow-lg p-8 text-gray-100">
           <p className="text-center text-3xl font-bold mb-6">Login</p>
 
-          <form className="space-y-4">
+          <form onSubmit={loginguser} className="space-y-4">
             <div>
               <label
-                htmlFor="username"
+                htmlFor="Email"
                 className="block text-sm text-gray-400 mb-1"
               >
                 Email
               </label>
               <input
                 type="email"
-                name="username"
+                name="email"
                 id="username"
                 className="w-full rounded-md border border-gray-700 bg-gray-900 px-4 py-3 text-gray-100 focus:border-violet-400 focus:outline-none"
                 required
@@ -73,17 +102,17 @@ const Login = () => {
               type="submit"
               className="w-full rounded-md bg-violet-400 py-3 font-semibold text-gray-900 hover:bg-violet-500 transition-colors"
             >
-              Sign in
+              Login
             </button>
           </form>
 
-          <div className="mt-6 flex items-center">
+          {/* <div className="mt-6 flex items-center">
             <div className="flex-1 h-px bg-gray-700"></div>
             <p className="px-3 text-sm text-gray-400">or</p>
             <div className="flex-1 h-px bg-gray-700"></div>
-          </div>
+          </div> */}
 
-          <div className="mt-4 flex justify-center gap-3">
+          {/* <div className="mt-4 flex justify-center gap-3">
             <button
               aria-label="Log in with Google"
               className="p-3 rounded bg-transparent hover:bg-gray-800 transition"
@@ -96,7 +125,7 @@ const Login = () => {
                 <path d="M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901-5.458 0-9.917-4.521-9.917-10.099s4.458-10.099 9.917-10.099c3.109 0 5.193 1.318 6.38 2.464l4.339-4.182c-2.786-2.599-6.396-4.182-10.719-4.182-8.844 0-16 7.151-16 16s7.156 16 16 16c9.234 0 15.365-6.49 15.365-15.635 0-1.052-0.115-1.854-0.255-2.651z" />
               </svg>
             </button>
-          </div>
+          </div> */}
 
           <p className="mt-6 text-center text-xs text-gray-400">
             Don’t have an account?{" "}

@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { ReactMatrixAnimation } from "react-matrix-animation";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Eye, EyeOff } from "lucide-react";
 import { useForm } from "react-hook-form";
 import UseAuth from "../useHoks/UseAuth";
 import Swal from "sweetalert2";
 
 const Register = () => {
-  const { Usercrate } = UseAuth();
+  const naviget = useNavigate();
+  const { Usercrate, updateProfil, Logout } = UseAuth();
+
   const [showPassword, setShowPassword] = useState(false);
   const {
     register,
@@ -20,12 +22,17 @@ const Register = () => {
 
   const onSubmit = (data) => {
     const { firstname, lastname, email, password } = data;
+    const fullName = `${firstname} ${lastname}`;
     Usercrate(email, password)
       .then((result) => {
+        console.log(result.user);
+        updateProfil({ displayName: fullName, photoURL: "" });
         Swal.fire({
           title: "Registered successfully!",
           icon: "success",
         });
+        Logout();
+        naviget("/login");
       })
       .catch((err) => {
         Swal.fire({
@@ -83,7 +90,7 @@ const Register = () => {
                 {...register("lastname", {
                   required: "Last name is required",
                   pattern: {
-                    value: /^[A-Za-z]{4,30}$/,
+                    value: /^[A-Za-z]{3,30}$/,
                     message: "4–30 letters only, no numbers or symbols",
                   },
                 })}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet, useLocation } from "react-router";
 import Navbar from "../Navbar/Navbar";
+import Footer from "../Pages/Footer";
 
 const Root = () => {
   const location = useLocation();
@@ -14,6 +15,7 @@ const Root = () => {
       <div className="">
         <Outlet />
       </div>
+      {HiddensNavandFoot || <Footer />}
     </div>
   );
 };

@@ -5,6 +5,7 @@ import Video from "../Pages/Video";
 import Course from "../Pages/Course";
 import Shop from "../Pages/Shop";
 import Paralax from "../Pages/Paralax";
+import HeroSection from "../Pages/HeroSection";
 
 const Home = () => {
   return (
@@ -12,9 +13,10 @@ const Home = () => {
       <Bannar></Bannar>
       <Services />
       <Video />
-      <Course />
-      <Paralax />
+
       <Shop />
+      <Paralax />
+      <HeroSection />
     </div>
   );
 };

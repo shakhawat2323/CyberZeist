@@ -3,8 +3,10 @@ import { Link } from "react-router";
 import Logo from "../../assets/Logo/Loaoa1.png";
 import Logos from "../../assets/Logo/Logo.png";
 import Button from "@mui/material/Button";
+import UseAuth from "../useHoks/UseAuth";
 
 const Navbar = () => {
+  const { user, Logout } = UseAuth();
   const navlink = (
     <>
       <li className="text">
@@ -25,6 +27,9 @@ const Navbar = () => {
       </li>
     </>
   );
+  const Logouts = () => {
+    Logout();
+  };
   return (
     <div className=" top-0 fixed w-full bg-[#EDECFA] z-50">
       <div className="navbar w-11/12 mx-auto">
@@ -63,38 +68,34 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navlink}</ul>
         </div>
         <div className="navbar-end">
-          {/* <div className="dropdown dropdown-end">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost w-24 h-24 btn-circle avatar"
-            >
-              <div className="w-16 rounded-full">
-                <img className="w-full" src={Logos} alt="" />
+          {user ? (
+            <div className="dropdown dropdown-end">
+              <div
+                tabIndex={0}
+                role="button"
+                className="btn btn-ghost w-24 h-24 btn-circle avatar"
+              >
+                <div className="w-16 rounded-full">
+                  <img className="w-full" src={Logos} alt="" />
+                </div>
               </div>
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                <li>
+                  <button onClick={Logouts} className="text">
+                    Logout
+                  </button>
+                </li>
+              </ul>
             </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-            >
-              <li>
-                <a className="justify-between">
-                  Profile
-                  <span className="badge">New</span>
-                </a>
-              </li>
-              <li>
-                <a>Settings</a>
-              </li>
-              <li>
-                <a>Logout</a>
-              </li>
-            </ul>
-          </div> */}
-          <Link to="/register">
-            {" "}
-            <Button className="button Buttons">Login</Button>
-          </Link>
+          ) : (
+            <Link to="/register">
+              {" "}
+              <Button className="button Buttons">Login</Button>
+            </Link>
+          )}
         </div>
       </div>
     </div>
